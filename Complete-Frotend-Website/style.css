@@ -1,0 +1,589 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #606060;
+}
+
+li {
+    list-style: none;
+}
+
+.center-div h1 {
+    color: #ffffff;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+.header-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #000000;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.412);
+    display: inline;
+    background: rgba(255, 255, 255, 0.331);
+    border-radius: 5px;
+    padding: 0 5px;
+    text-transform: capitalize;
+}
+
+.extra-div h2,
+.service-div h2 {
+    font-size: 1.1rem;
+    margin: 20px 0 15px 0;
+    font-weight: bold;
+    line-height: 1.1;
+    word-spacing: 4px;
+}
+
+/* -----------------------universal css end---------------------- */
+/* /* linear-gradient(rgba(0, 168, 255, 0.3), rgba(0, 168, 255, 0.3)),   by thapa technical for bg */
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 168, 255, 0.1), rgba(0, 168, 255, 0.4)), url("./img/webBg4.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    clip-path: polygon(100% 0%, 100% 75%, 50% 100%, 0 75%, 0 0);
+    position: relative;
+}
+
+.header:before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    opacity: .3;
+    z-index: -1;
+    background: linear-gradient(to top right, #1e5799 0%, #3ccdbb 8%, #16c9f6 80%);
+}
+
+.navbar:before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    opacity: 80%;
+    z-index: -1;
+    background: linear-gradient(to right, #2de7ff 0%, #007b89 0%, #00ccff 100%);
+}
+
+.navbar-brand {
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+}
+
+.nav-item a {
+    color: #fff !important;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.nav-item a:hover {
+    /* transform: scale(1.07); */
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+}
+
+.header-section {
+    width: 100%;
+    height: inherit;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.center-div {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.header-buttons a {
+    border: 1px solid #ffffff;
+    border-radius: 120px;
+    margin: 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.header-buttons a:hover {
+    color: #50d1c0;
+    background-color: #fff;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+
+/* *******************Three extra header divs css start*************************  */
+
+.extra-div {
+    width: 100%;
+    height: auto;
+    margin: 100px 0;
+    border-radius: 5px;
+}
+
+.extra-div {
+    background-color: #fff;
+    border: medium none;
+    padding: 50px !important;
+    border-radius: 3px;
+    transition: 0.4s;
+}
+
+.extra-div p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #606060;
+}
+
+.extra-div:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    transform: translateY(-20px);
+}
+
+/* *******************Three extra header divs css end*************************  */
+
+
+/* <!-- *******************offer section css start************************* --> */
+.serviceoffers {
+    background: #f7f7f9;
+    padding: 50px 0;
+    margin-bottom: 50px;
+}
+
+.headings {
+    margin-bottom: 50px;
+}
+
+.headings h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.names h1 {
+    color: #2e2e2e;
+    font-size: 0.9rem;
+}
+
+.service-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress {
+    height: 0.8rem !important;
+    margin-bottom: 25px !important;
+}
+
+i {
+    color: #2fccd0;
+}
+
+/* <!-- *******************offer section css end************************* --> */
+
+
+/* <!-- *******************Project work section css start************************* --> */
+.project-work {
+    margin: 100px 0;
+}
+
+.project-work h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* <!-- *******************Project work section css end************************* --> */
+
+
+/* <!-- *******************our pricing section CSS start************************* --> */
+
+.pricing {
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+    position: relative;
+}
+
+.pricing:before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    z-index: -1;
+    background: linear-gradient(160deg, #16c9f6 55%, #ffffff 0%);
+}
+
+.money {
+    font-size: 40px;
+    line-height: 1;
+    color: #606060;
+}
+
+.card {
+    transition: 0.4s ease;
+}
+
+.card-header {
+    font-size: 1.6rem;
+    font-weight: bold;
+    background: #fff !important;
+    padding: 25px 9 !important;
+}
+
+.card-body {
+    padding: 30px 0 !important;
+}
+
+.card-body li {
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #606060;
+}
+
+.card-footer {
+    background: white !important;
+    padding: 30px 0 !important;
+}
+
+.card-footer a {
+    border: 1px solid #50d1c0;
+    border-radius: 120px;
+    margin: 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: #50d1c0;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.card:hover .card-footer a {
+    text-decoration: none;
+    color: #ffffff;
+    background: #50d1c0;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.card-second {
+    transform: translateY(-20px);
+}
+
+.card:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.card:hover .card-header,
+.card:hover .money {
+    color: #50d1c0;
+}
+
+
+/* <!-- *******************our pricing section CSS end************************* --> */
+
+/* <!-- *******************happy  clients section CSS start************************* --> */
+
+.happy-clients {
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0;
+}
+
+.box {
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+    transition: 0.3s ease;
+}
+
+.box:hover {
+    background: linear-gradient(to top right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+}
+
+.box:hover p {
+    color: rgba(0, 0, 0, 0.699);
+}
+
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: -60px !important;
+}
+
+.carousel-indicators li {
+    background-color: #16c9f6 !important;
+}
+
+.box a {
+    position: relative;
+}
+
+.box a img {
+    width: 150px;
+    height: 120px;
+    border-radius: 50%;
+    margin-top: 20px;
+    border: 2px solid #16c9f6;
+}
+
+.box a::after {
+    content: "\f10d";
+    font-family: FontAwesome;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+    color: white;
+    position: absolute;
+    top: 120%;
+    left: 80%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box h1 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.box h2 {
+    font-size: 13px;
+    font-weight: 400;
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+/* <!-- *******************happy clients section CSS end************************* --> */
+
+
+/* <!-- *******************contact us section CSS start************************* --> */
+.contactus {
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0;
+    position: relative;
+}
+
+.contactus::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(330deg, #16c9f6 55%, #fff 0%);
+    z-index: -1;
+}
+
+.form-button button {
+    border: 1px solid #ffffff;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 10px 35px;
+    outline: none;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+    background: transparent;
+}
+
+form:hover .form-button button {
+    background: #fff;
+    color: #50d1c0;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+::placeholder {
+    font-size: 0.85rem;
+}
+
+/* <!-- *******************contact us section CSS  end************************* --> */
+
+/* <!-- *******************newsletter section CSS  start************************* --> */
+.newsletter {
+    width: 100%;
+    height: auto;
+    margin: 120px auto;
+}
+
+.news-input {
+    border-radius: 100px 0px 0px 100px !important;
+    min-width: 150px;
+    min-height: 40px;
+}
+
+.input-group-text {
+    background: #5bc0de !important;
+    color: #fff !important;
+    border-radius: 0 100px 100px 0 !important;
+    min-width: 130px;
+    min-height: 40px;
+    text-align: center !important;
+}
+
+/* <!-- *******************newslettersection CSS  end************************* --> */
+
+
+/* <!-- ****************************footer css start***************** --> */
+.footer-section {
+    width: 100%;
+    height: auto;
+    padding: 70px 0 20px 0;
+    background: #00abff;
+    position: relative;
+}
+
+.footer-section p {
+    color: #fff;
+}
+
+.footer-section li a {
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.footer-section li a:hover {
+    text-decoration: none;
+    color: #00000058;
+}
+
+.footer-section h3 {
+    text-transform: uppercase;
+    color: #e3e3e3ed;
+    margin-bottom: 25px;
+    font-size: 1.4rem !important;
+    font-weight: bold;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* <!-- ****************************footer css end***************** --> */
+
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    z-index: 99;
+    border: none;
+    color: #fff;
+    background: #00abff;
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 25px;
+}
+
+
+#myBtn:hover {
+    background: #6060607f;
+}
+
+
+
+/* ************************Media quriesssss*********************** */
+@media (max-width:768px) {
+    .nav-item {
+        text-align: center !important;
+    }
+
+    .top {
+        top: 20%;
+    }
+
+    .header-buttons a {
+        padding: 8px 20px;
+    }
+
+    .pricing,
+    .happy-clients,
+    .contactus {
+        height: auto;
+        margin-top: 50px;
+    }
+
+    .box {
+        margin: 0 0 20px 0;
+    }
+
+    .card-second {
+        transform: translateY(0px);
+        margin: 30px 0;
+    }
+
+    .footer-div:nth-child(2) {
+        margin: 30px 0;
+    }
+    .extra-div {
+        margin: 10px 0;
+    }
+
+}
+
+@media (max-width:400px) {
+    .center-div h1 {
+        font-size: 2rem;
+    }
+
+    .header-section p {
+        font-size: .9rem;
+    }
+    .newsletter-main .input-group{
+    min-width: 10px;
+    }
+    .newsletter-main  .input-group-text{
+        min-width: 10px;
+    }
+     .card{
+        width: 200px !important;
+    }
+}
