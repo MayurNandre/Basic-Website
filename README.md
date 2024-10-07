@@ -15,5 +15,7 @@ how to start:-
 
 
 
-snapshot:-
+Snapshot:-
 ![Screenshot (149)](https://github.com/user-attachments/assets/89bde3d8-cef9-4ad1-8055-ac948d52517a)
+SnapShot:-
+![Screenshot (151)](https://github.com/user-attachments/assets/f4fb2a64-a155-4cc9-897c-1bc21d452fba)
